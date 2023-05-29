@@ -1,0 +1,6 @@
+C:\Users\Soffe\source\repos\GlossarySolution\GlossaryLibrary\bin\Debug\GlossaryLibrary.dll
+C:\Users\Soffe\source\repos\GlossarySolution\GlossaryLibrary\bin\Debug\GlossaryLibrary.pdb
+C:\Users\Soffe\source\repos\GlossarySolution\GlossaryLibrary\obj\Debug\GlossaryLibrary.csproj.AssemblyReference.cache
+C:\Users\Soffe\source\repos\GlossarySolution\GlossaryLibrary\obj\Debug\GlossaryLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Soffe\source\repos\GlossarySolution\GlossaryLibrary\obj\Debug\GlossaryLibrary.dll
+C:\Users\Soffe\source\repos\GlossarySolution\GlossaryLibrary\obj\Debug\GlossaryLibrary.pdb

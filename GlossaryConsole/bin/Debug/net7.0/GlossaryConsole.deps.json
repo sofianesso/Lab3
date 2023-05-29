@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "GlossaryConsole/1.0.0": {
+        "dependencies": {
+          "GlossaryLibrary": "1.0.0"
+        },
+        "runtime": {
+          "GlossaryConsole.dll": {}
+        }
+      },
+      "GlossaryLibrary/1.0.0": {
+        "runtime": {
+          "GlossaryLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GlossaryConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GlossaryLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
