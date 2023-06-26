@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryConsole\\GlossaryConsole.csproj": {}
+    "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryConsole\\GlossaryConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryConsole\\GlossaryConsole.csproj": {
+    "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryConsole\\GlossaryConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryConsole\\GlossaryConsole.csproj",
+        "projectUniqueName": "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryConsole\\GlossaryConsole.csproj",
         "projectName": "GlossaryConsole",
-        "projectPath": "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryConsole\\GlossaryConsole.csproj",
+        "projectPath": "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryConsole\\GlossaryConsole.csproj",
         "packagesPath": "C:\\Users\\Soffe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryConsole\\obj\\",
+        "outputPath": "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Soffe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryLibrary\\GlossaryLibrary.csproj": {
-                "projectPath": "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryLibrary\\GlossaryLibrary.csproj"
+              "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryLibrary\\GlossaryLibrary.csproj": {
+                "projectPath": "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryLibrary\\GlossaryLibrary.csproj"
               }
             }
           }
@@ -63,11 +63,11 @@
         }
       }
     },
-    "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryLibrary\\GlossaryLibrary.csproj": {
+    "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryLibrary\\GlossaryLibrary.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryLibrary\\GlossaryLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryLibrary\\GlossaryLibrary.csproj",
         "projectName": "GlossaryLibrary",
-        "projectPath": "C:\\Users\\Soffe\\source\\repos\\GlossarySolution\\GlossaryLibrary\\GlossaryLibrary.csproj",
+        "projectPath": "C:\\Users\\Soffe\\source\\repos\\Lab3\\GlossaryLibrary\\GlossaryLibrary.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}

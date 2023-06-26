@@ -11,6 +11,8 @@ using System.Windows.Forms;
 
 namespace GlossaryForms
 {
+
+
     public partial class WordListControl : UserControl
     {
         public WordListControl()
@@ -19,6 +21,7 @@ namespace GlossaryForms
             UpdateLists();
         }
 
+       
 
         public void UpdateLists()
         {
@@ -100,7 +103,7 @@ namespace GlossaryForms
 
                 if (list != null)
                 {
-                    string[] translations = inputWord.Split(',');
+                    string[] translations = inputWord.Split(',').Select(s => s.Trim()).ToArray();
                     if (translations.Length != list.Languages.Length)
                     {
                         MessageBox.Show($"Vänligen tillhandahåll översättningar för alla {list.Languages.Length} språk.");
@@ -132,7 +135,7 @@ namespace GlossaryForms
 
         private void BtnRemoveWord_Click(object sender, EventArgs e)
         {
-            string wordToRemove = txtRemoveWord.Text;
+            string wordToRemove = txtRemoveWord.Text.Trim();
 
             if (!string.IsNullOrEmpty(wordToRemove))
             {
@@ -183,15 +186,46 @@ namespace GlossaryForms
 
         private void BtnPractice_Click(object sender, EventArgs e)
         {
-            string selectedList = cbLists.SelectedItem.ToString();
+            string selectedList = null;
+            if (cbLists.SelectedItem != null)
+            {
+                selectedList = cbLists.SelectedItem.ToString();
+            }
+
             WordList list = WordList.LoadList(selectedList);
 
             if (list != null)
             {
                 Word wordToPractice = list.GetWordToPractice();
-                if (wordToPractice != null)
+                if (wordToPractice != null &&
+                    wordToPractice.Translations != null &&
+                    wordToPractice.Translations.Length > wordToPractice.FromLanguage &&
+                    wordToPractice.Translations.Length > wordToPractice.ToLanguage &&
+                    !string.IsNullOrEmpty(wordToPractice.Translations[wordToPractice.FromLanguage]) &&
+                    !string.IsNullOrEmpty(wordToPractice.Translations[wordToPractice.ToLanguage]))
                 {
-                    MessageBox.Show($"Öva detta ord: {wordToPractice}");
+                    // Show the word to practice and ask for translation
+                    string message = $"Öva detta ord: {wordToPractice.Translations[wordToPractice.FromLanguage]}\n";
+                    message += $"Översätt till: {list.Languages[wordToPractice.ToLanguage]}";
+
+                    using (PracticeForm practiceForm = new PracticeForm())
+                    {
+                        practiceForm.lblQuestion.Text = message;
+
+                        if (practiceForm.ShowDialog() == DialogResult.OK)
+                        {
+                            string userTranslation = practiceForm.UserAnswer;
+
+                            if (userTranslation.ToLower() == wordToPractice.Translations[wordToPractice.ToLanguage].ToLower())
+                            {
+                                MessageBox.Show("Rätt svar!");
+                            }
+                            else
+                            {
+                                MessageBox.Show($"Fel svar. Rätt svar är: {wordToPractice.Translations[wordToPractice.ToLanguage]}");
+                            }
+                        }
+                    }
                 }
                 else
                 {
